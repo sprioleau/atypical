@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100vw;
+}
+
+:root {
+	--font-weight: 300;
+	--font-slant: -7;
+	--font-casual: 0;
+}
+
+body {
+	background-color: #0d043d;
+	color: #bdb7e2;
+}
+
+input,
+textarea {
+	display: block;
+	border: none;
+	padding: 0;
+	line-height: 1;
+	width: 100%;
+	background-color: transparent;
+	font-size: 15vmin;
+	text-align: center;
+	color: inherit;
+	font-family: "Recursive", sans-serif;
+	font-variation-settings: "wght" var(--font-weight), "CASL" var(--font-casual), "slnt" var(--font-slant);
+
+	&:focus-visible,
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+.app {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.zones {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	padding: 5vw;
+}
+
+// .zone {
+// 	--offset: 5vw;
+// 	position: absolute;
+// 	font-size: 10vmin;
+// 	opacity: 0.3;
+// 	font-variation-settings: "wght" var(--font-weight), "slnt" var(--font-slant);
+// 	pointer-events: none;
+// 	user-select: none;
+// 	z-index: -1;
+
+// 	&-1 {
+// 		top: var(--offset);
+// 		left: var(--offset);
+// 	}
+
+// 	&-2 {
+// 		top: var(--offset);
+// 		right: var(--offset);
+// 		font-variation-settings: "wght" 900, "slnt" -15;
+// 	}
+
+// 	&-3 {
+// 		bottom: var(--offset);
+// 		left: var(--offset);
+// 	}
+
+// 	&-4 {
+// 		bottom: var(--offset);
+// 		right: var(--offset);
+// 	}
+// }
